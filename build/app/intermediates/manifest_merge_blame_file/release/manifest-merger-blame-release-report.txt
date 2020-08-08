@@ -1,0 +1,173 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.srmdot"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml
+10    <!--
+11         io.flutter.app.FlutterApplication is an android.app.Application that
+12         calls FlutterMain.startInitialization(this); in its onCreate method.
+13         In most cases you can leave this as-is, but you if you want to provide
+14         additional functionality it is fine to subclass or reimplement
+15         FlutterApplication and put your custom class here.
+16    -->
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:8:5-65
+17-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:8:22-62
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:9:5-67
+18-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:9:22-64
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:10:5-80
+19-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:10:22-78
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+20-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:11:5-79
+20-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:11:22-77
+21    <!-- Include required permissions for Google Maps API to run. -->
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+22-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+23
+24    <uses-feature
+24-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+25        android:glEsVersion="0x00020000"
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+26        android:required="true" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+27    <uses-feature
+27-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:25:5-27:36
+28        android:name="android.hardware.camera"
+28-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:26:9-47
+29        android:required="false" />
+29-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:27:9-33
+30    <uses-feature
+30-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:28:5-30:36
+31        android:name="android.hardware.camera.front"
+31-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:29:9-53
+32        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+32-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:30:9-33
+33    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+34    <uses-feature
+34-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:33:5-35:36
+35        android:name="android.hardware.camera.autofocus"
+35-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:34:9-57
+36        android:required="false" />
+36-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:35:9-33
+37    <uses-feature
+37-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:36:5-38:36
+38        android:name="android.hardware.camera.flash"
+38-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:37:9-53
+39        android:required="false" />
+39-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:38:9-33
+40    <uses-feature
+40-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:39:5-41:36
+41        android:name="android.hardware.screen.landscape"
+41-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:40:9-57
+42        android:required="false" />
+42-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:41:9-33
+43    <uses-feature
+43-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:42:5-44:36
+44        android:name="android.hardware.wifi"
+44-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:43:9-45
+45        android:required="false" />
+45-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:44:9-33
+46
+47    <application
+47-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:13:5-35:19
+48        android:name="io.flutter.app.FlutterApplication"
+48-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:14:9-57
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.1.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+50        android:icon="@mipmap/ic_launcher"
+50-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:16:9-43
+51        android:label="Dash" >
+51-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:15:9-29
+52        <activity
+52-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:17:9-28:20
+53            android:name="com.example.srmdot.MainActivity"
+53-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:18:13-41
+54            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+54-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:21:13-163
+55            android:hardwareAccelerated="true"
+55-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:22:13-47
+56            android:launchMode="singleTop"
+56-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:19:13-43
+57            android:theme="@style/LaunchTheme"
+57-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:20:13-47
+58            android:windowSoftInputMode="adjustResize" >
+58-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:23:13-55
+59            <intent-filter>
+59-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:24:13-27:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:25:17-68
+60-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:25:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:26:17-76
+62-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:26:27-74
+63            </intent-filter>
+64        </activity>
+65
+66        <!--
+67             Don't delete the meta-data below.
+68             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+69        -->
+70        <meta-data
+70-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:32:9-34:33
+71            android:name="flutterEmbedding"
+71-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:33:13-44
+72            android:value="2" />
+72-->C:\Application\DOT_App-master\android\app\src\main\AndroidManifest.xml:34:13-30
+73
+74        <activity
+74-->[:url_launcher] C:\Application\DOT_App-master\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+75            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+75-->[:url_launcher] C:\Application\DOT_App-master\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
+76            android:exported="false"
+76-->[:url_launcher] C:\Application\DOT_App-master\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+77            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" /> <!-- Needs to be explicitly declared on P+ -->
+77-->[:url_launcher] C:\Application\DOT_App-master\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+78        <uses-library
+78-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+79            android:name="org.apache.http.legacy"
+79-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+80            android:required="false" />
+80-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+81
+82        <activity
+82-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:47:9-53:63
+83            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+83-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:48:13-74
+84            android:clearTaskOnLaunch="true"
+84-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:49:13-45
+85            android:screenOrientation="sensorLandscape"
+85-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:50:13-56
+86            android:stateNotNeeded="true"
+86-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:51:13-42
+87            android:theme="@style/zxing_CaptureTheme"
+87-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:52:13-54
+88            android:windowSoftInputMode="stateAlwaysHidden" />
+88-->[com.journeyapps:zxing-android-embedded:4.0.2] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\f3deb80348ae07fa84891d38e0fe129f\zxing-android-embedded-4.0.2\AndroidManifest.xml:53:13-60
+89        <activity
+89-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+90            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+90-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+91            android:exported="false"
+91-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+92            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+92-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+93
+94        <meta-data
+94-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\e683cddd8066d8df29e1199144c45d94\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+95            android:name="com.google.android.gms.version"
+95-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\e683cddd8066d8df29e1199144c45d94\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+96            android:value="@integer/google_play_services_version" />
+96-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\anish\.gradle\caches\transforms-2\files-2.1\e683cddd8066d8df29e1199144c45d94\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+97    </application>
+98
+99</manifest>
